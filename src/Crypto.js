@@ -46,9 +46,9 @@ class Crypto extends Component {
                 }
 
             })
-            console.log(newCryptoList);
+            console.log(res.data);
 
-        })
+        });
     }
 
     render() {

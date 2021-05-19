@@ -45,16 +45,22 @@ class Crypto extends Component {
                     newCryptoList.push(newCryptoObj);
                 }
 
-            })
-            console.log(res.data);
+                return ({
+                    cryptoList: newCryptoList
 
+                })
+
+            });
+
+            console.log(res.data);
+            
         });
     }
 
     render() {
         return(
             <div className="Crypto">
-                <CryptoList />
+                <CryptoList cryptoList={this.state.cryptoList} />
             </div>
         );
     }

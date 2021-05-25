@@ -3,9 +3,6 @@ import './Crypto.css';
 
 import axios from 'axios';
 import CryptoList from './CryptoList';
-import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react-dom/cjs/react-dom.development';
-
-
 
 class Crypto extends Component {
 
@@ -14,7 +11,7 @@ class Crypto extends Component {
 
         this.state = {
             cryptoList : [],
-            filterCryptoList: [],
+            filteredCryptoList: [],
 
         };
     }
@@ -96,7 +93,7 @@ class Crypto extends Component {
             });
 
             return({
-                newFilteredCryptoList: newFilteredCryptoList
+                filteredCryptoList: newFilteredCryptoList
             });
 
         });
